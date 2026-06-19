@@ -75,18 +75,17 @@ export default function Home() {
             texts={[
               "Yegor Artsev",
               "Game Designer",
-              "VR Game Designer",
               "Level Designer",
               "Systems Designer",
             ]}
-            morphTime={1.6}
-            cooldownTime={3}
+            morphTime={1.2}
+            cooldownTime={2.2}
             className="h-[58px] md:h-[92px] w-full max-w-5xl"
             textClassName="retro text-white whitespace-nowrap text-2xl md:text-5xl [text-shadow:0_3px_14px_rgba(0,0,0,0.6)]"
           />
 
           <p className="retro text-[10px] md:text-xs tracking-[0.08em] text-[#9be37b]">
-            Game Designer · Builds &amp; Ships · Unity / UE
+            Game / Level Designer · Builds &amp; Ships · Unity / UE
           </p>
 
           <p className="max-w-xl text-sm md:text-base text-white/85 leading-relaxed [text-shadow:0_2px_12px_rgba(0,0,0,0.55)]">
@@ -119,7 +118,7 @@ export default function Home() {
       <section id="work" className="relative z-10 bg-background py-20 md:py-28">
         <div className="mb-10 px-5 text-center md:mb-14 md:px-10">
           <p className="retro text-[10px] tracking-[0.14em] text-primary">
-            [ 01 / Selected work ]
+            [ Selected work ]
           </p>
           <p className="mt-4 text-xs text-muted-foreground md:text-sm">
             Pick a level. Arrows flip through the work.
