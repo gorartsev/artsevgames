@@ -93,7 +93,7 @@ export function LevelSelect({ projects }: { projects: Project[] }) {
     <div className="mx-auto max-w-6xl px-4">
       {/* heading */}
       <div className="mb-9 text-center md:mb-12">
-        <h2 className="retro text-xl text-foreground md:text-4xl">
+        <h2 className="retro text-lg text-foreground sm:text-2xl md:text-4xl">
           SELECT A PROJECT
         </h2>
         <p className="retro mt-3 text-[8px] tracking-[0.15em] text-primary md:text-[11px]">
@@ -142,7 +142,7 @@ export function LevelSelect({ projects }: { projects: Project[] }) {
                 <h3 className="retro text-base text-white md:text-xl [text-shadow:0_2px_6px_#000]">
                   {c.name}
                 </h3>
-                <p className="mt-2 max-w-md text-xs text-white/80 md:text-sm">
+                <p className="mt-2 hidden max-w-md text-xs text-white/80 sm:block md:text-sm">
                   {c.line}
                 </p>
               </div>

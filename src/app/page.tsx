@@ -81,7 +81,7 @@ export default function Home() {
             morphTime={1.2}
             cooldownTime={2.2}
             className="h-[58px] md:h-[92px] w-full max-w-5xl"
-            textClassName="retro text-white whitespace-nowrap text-2xl md:text-5xl [text-shadow:0_3px_14px_rgba(0,0,0,0.6)]"
+            textClassName="retro text-white whitespace-nowrap text-lg sm:text-3xl md:text-5xl [text-shadow:0_3px_14px_rgba(0,0,0,0.6)]"
           />
 
           <p className="retro text-[10px] md:text-xs tracking-[0.08em] text-[#9be37b]">

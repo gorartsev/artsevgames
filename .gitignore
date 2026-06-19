@@ -49,3 +49,6 @@ next-env.d.ts
 /project_pages_research_2026-06-19.md
 /site_rework_brief.md
 /old_site_project_audit_2026-06-19.md
+
+# local preview/launch config
+/.claude/
