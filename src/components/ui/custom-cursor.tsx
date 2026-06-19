@@ -3,36 +3,35 @@
 import { useEffect, useRef, useState } from "react";
 
 const PAL: Record<string, string> = {
-  O: "#0a0b0e", // outline
-  W: "#3c414b", // body light edge
-  B: "#23262d", // body
-  D: "#0f1116", // d-pad
-  S: "#5a606a", // stick rim
-  s: "#16181d", // stick hole
-  c: "#46d6ee", // light bar
-  G: "#7fd06a", // triangle
-  R: "#e0556b", // circle
-  U: "#5aa9e6", // cross
-  P: "#cf8ad6", // square
+  O: "#070809", // outline (near black)
+  B: "#26282e", // body
+  W: "#454a54", // body highlight edge
+  D: "#15171c", // d-pad
+  S: "#3a3e45", // stick rim
+  s: "#0e0f12", // stick dome
+  G: "#86d6a8", // triangle (green)
+  R: "#e0556b", // circle (red)
+  U: "#5aa9e6", // cross (blue)
+  P: "#d98fc8", // square (pink)
 };
 
-// DualShock-style gamepad
+// PS2 DualShock 2 style gamepad
 const GAMEPAD = [
-  "....OOOOOOOOOOOO....",
-  "..OOWWWWWWWWWWWWOO..",
-  ".OWWBBBBccccBBBBWWO.",
-  "OWWBBBBBccccBBBBBWWO",
-  "OWBBBDBBBBBBBBGBBBWO",
-  "OWBDDDBBBBBBPBBRBBWO",
-  "OWBBBDBBBBBBBBUBBBWO",
-  "OWBBBBBSSBBSSBBBBBWO",
-  "OWBBBBSssSSssSBBBBWO",
-  ".OWBBBBSSBBSSBBBBWO.",
-  ".OOWBBBBBBBBBBBBWOO.",
-  "OOWBBWOOOOOOOOWBBWOO",
-  "OWBBWO........OWBBWO",
-  "OWBWO..........OWBWO",
-  ".OOO............OOO.",
+  "...OOOO......OOOO...",
+  "..OWWWWO....OWWWWO..",
+  ".OWBBBBBBBBBBBBBBWO.",
+  "OWBBBBBBBBBBBBBBBBWO",
+  "OWBBDBBBBBBBBBGBBBWO",
+  "OWBDDDBBBBBBPBBBRBWO",
+  "OWBBDBBBBBBBBBUBBBWO",
+  "OWBBBBBBBBBBBBBBBBWO",
+  "OWBBBBSSBBBSSBBBBBWO",
+  "OWBBBSssSBSssSBBBBWO",
+  "OOWBBBSSBBBSSBBBBWOO",
+  "OBBBBBBO....OBBBBBBO",
+  "OBBBBBO......OBBBBBO",
+  ".OBBBO........OBBBO.",
+  ".OOOO..........OOOO.",
 ];
 
 const CPAL: Record<string, string> = {
