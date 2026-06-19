@@ -5,7 +5,7 @@ import { PixelTrail } from "@/components/ui/pixel-trail"
 import { GooeyFilter } from "@/components/ui/gooey-filter"
 import { GooeyText } from "@/components/ui/gooey-text-morphing"
 import { LevelSelect } from "@/components/ui/level-select"
-import { SoundToggle } from "@/components/ui/sound-toggle"
+import { SiteHeader } from "@/components/ui/site-header"
 import { HandWrittenTitle } from "@/components/ui/hand-writing-text"
 import Timeline2 from "@/components/ui/8bit-timeline2"
 import FAQ1 from "@/components/ui/8bit-faq1"
@@ -39,6 +39,7 @@ import {
 export default function Home() {
   return (
     <main className="flex-1">
+      <SiteHeader />
       <BootScreen />
       {/* ---------------- HERO ---------------- */}
       <section className="relative min-h-svh flex flex-col overflow-hidden text-white">
@@ -63,30 +64,6 @@ export default function Home() {
         >
           <PixelTrail pixelSize={32} fadeDuration={2000} delay={0} pixelClassName="bg-[#52b788]" />
         </div>
-
-        {/* top nav — transparent, with sound note + animated status */}
-        <header className="relative z-20 flex items-center justify-between gap-4 px-5 py-6 md:px-10">
-          {/* left: sound toggle + name */}
-          <div className="flex items-center gap-4 md:gap-6">
-            <SoundToggle />
-            <span className="hidden retro text-[9px] tracking-[0.05em] sm:inline">
-              Yegor Artsev
-            </span>
-          </div>
-
-          {/* center: nav */}
-          <nav className="hidden gap-8 retro text-[9px] text-white/75 md:flex">
-            <a href="#work" className="hover:text-white transition-colors">Work</a>
-            <a href="#about" className="hover:text-white transition-colors">About</a>
-            <a href="#contact" className="hover:text-white transition-colors">Contact</a>
-          </nav>
-
-          {/* right: animated open-to-work */}
-          <span className="flex items-center gap-2 retro text-[9px] text-[#9be37b]">
-            <span className="hud-blink inline-block h-2 w-2 bg-[#9be37b]" style={{ boxShadow: "0 0 0 1px #0e120f" }} />
-            <span className="hidden sm:inline">Open to work</span>
-          </span>
-        </header>
 
         {/* center identity */}
         <div className="relative z-10 flex-1 flex flex-col items-center justify-center text-center px-5 gap-8">

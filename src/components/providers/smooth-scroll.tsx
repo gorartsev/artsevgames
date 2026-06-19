@@ -43,8 +43,9 @@ export function SmoothScroll({ children }: { children: React.ReactNode }) {
         lerp: 0.09,
         smoothWheel: true,
         wheelMultiplier: 1,
-        // smooth-scroll to #section anchors (Work / About / Contact)
-        anchors: true,
+        // smooth-scroll to #section anchors (Work / About / Contact),
+        // offset so section titles clear the fixed header
+        anchors: { offset: -80 },
       }}
     >
       {children}
