@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="604" viewBox="0 0 1500 604" font-size="12">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+      .f { font-family:'Inter','Segoe UI',sans-serif; }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1500" height="604" fill="#ffffff"/>
+
+  <!-- TITLE BAND -->
+  <rect x="0" y="0" width="1500" height="64" fill="#1e2640"/>
+  <text x="750" y="30" class="f" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">ORBITJUMP — DESIGN DOCUMENT</text>
+  <text x="750" y="50" class="f" font-size="12" font-style="italic" fill="#b9c4d8" text-anchor="middle">Planet Types  |  Fuel Economy  |  Difficulty Waves</text>
+
+  <!-- ============ PLANET TYPES ============ -->
+  <rect x="16" y="78" width="1060" height="22" fill="#3a5566"/>
+  <text x="546" y="93" class="f" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">PLANET TYPES</text>
+  <g class="f" font-size="12" font-weight="600" fill="#fff">
+    <rect x="16" y="100" width="220" height="22" fill="#4a6a7d"/><rect x="236" y="100" width="380" height="22" fill="#4a6a7d"/><rect x="616" y="100" width="240" height="22" fill="#4a6a7d"/><rect x="856" y="100" width="220" height="22" fill="#4a6a7d"/>
+    <text x="26" y="115">PLANET</text><text x="246" y="115">EFFECT</text><text x="626" y="115">SPAWN</text><text x="866" y="115">UNLOCKS</text>
+  </g>
+  <g class="f" font-size="12" fill="#2b2b2b">
+    <rect x="16" y="122" width="220" height="24" fill="#fbf3cf"/><rect x="236" y="122" width="380" height="24" fill="#fbf3cf"/><rect x="616" y="122" width="240" height="24" fill="#fbf3cf"/><rect x="856" y="122" width="220" height="24" fill="#fbf3cf"/>
+    <text x="26" y="138" font-weight="600">Standard (70%)</text><text x="246" y="138">Land &amp; orbit, 10 pts base</text><text x="626" y="138">every planet</text><text x="866" y="138">start</text>
+    <rect x="16" y="146" width="220" height="24" fill="#d9f0dd"/><rect x="236" y="146" width="380" height="24" fill="#d9f0dd"/><rect x="616" y="146" width="240" height="24" fill="#d9f0dd"/><rect x="856" y="146" width="220" height="24" fill="#d9f0dd"/>
+    <text x="26" y="162" font-weight="600">Refuel Station</text><text x="246" y="162">One orbit = full fuel restore</text><text x="626" y="162">every 15–20</text><text x="866" y="162">start</text>
+    <rect x="16" y="170" width="220" height="24" fill="#fde7c2"/><rect x="236" y="170" width="380" height="24" fill="#fde7c2"/><rect x="616" y="170" width="240" height="24" fill="#fde7c2"/><rect x="856" y="170" width="220" height="24" fill="#fde7c2"/>
+    <text x="26" y="186" font-weight="600">Catapult</text><text x="246" y="186">Auto-launch 5–7 planets ahead</text><text x="626" y="186">every 8–12</text><text x="866" y="186">planet 15</text>
+    <rect x="16" y="194" width="220" height="24" fill="#d9e8f7"/><rect x="236" y="194" width="380" height="24" fill="#d9e8f7"/><rect x="616" y="194" width="240" height="24" fill="#d9e8f7"/><rect x="856" y="194" width="220" height="24" fill="#d9e8f7"/>
+    <text x="26" y="210" font-weight="600">Wormhole</text><text x="246" y="210">Teleport 5–7 ahead, zero fuel</text><text x="626" y="210">every 20–30</text><text x="866" y="210">planet 25</text>
+    <rect x="16" y="218" width="220" height="24" fill="#e7dbf5"/><rect x="236" y="218" width="380" height="24" fill="#e7dbf5"/><rect x="616" y="218" width="240" height="24" fill="#e7dbf5"/><rect x="856" y="218" width="220" height="24" fill="#e7dbf5"/>
+    <text x="26" y="234" font-weight="600">Time Loop</text><text x="246" y="234">50% slow-motion for 5 seconds</text><text x="626" y="234">every 25–30</text><text x="866" y="234">planet 60</text>
+  </g>
+
+  <!-- ============ FUEL ECONOMY ============ -->
+  <rect x="16" y="254" width="1060" height="22" fill="#3a5566"/>
+  <text x="546" y="269" class="f" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">FUEL ECONOMY — SPAWN BALANCE</text>
+  <g class="f" font-size="12" font-weight="600" fill="#fff">
+    <rect x="16" y="276" width="220" height="22" fill="#4a6a7d"/><rect x="236" y="276" width="280" height="22" fill="#4a6a7d"/><rect x="516" y="276" width="240" height="22" fill="#4a6a7d"/><rect x="756" y="276" width="320" height="22" fill="#4a6a7d"/>
+    <text x="26" y="291">SCENARIO</text><text x="246" y="291">CAPSULES</text><text x="526" y="291">EXTRA TAPS</text><text x="766" y="291">EXPECTED RANGE</text>
+  </g>
+  <g class="f" font-size="12" fill="#2b2b2b">
+    <rect x="16" y="298" width="220" height="24" fill="#fbf3cf"/><rect x="236" y="298" width="280" height="24" fill="#fbf3cf"/><rect x="516" y="298" width="240" height="24" fill="#fbf3cf"/><rect x="756" y="298" width="320" height="24" fill="#fbf3cf"/>
+    <text x="26" y="314" font-weight="600">30 planets</text><text x="246" y="314">10–15 appear</text><text x="526" y="314">14–20 extra</text><text x="766" y="314">24–30 total planets</text>
+    <rect x="16" y="322" width="220" height="24" fill="#d9f0dd"/><rect x="236" y="322" width="280" height="24" fill="#d9f0dd"/><rect x="516" y="322" width="240" height="24" fill="#d9f0dd"/><rect x="756" y="322" width="320" height="24" fill="#d9f0dd"/>
+    <text x="26" y="338" font-weight="600">Beginner</text><text x="246" y="338">collects 7–10</text><text x="526" y="338">careful play</text><text x="766" y="338">dies at 15–20</text>
+    <rect x="16" y="346" width="220" height="24" fill="#f7d9d9"/><rect x="236" y="346" width="280" height="24" fill="#f7d9d9"/><rect x="516" y="346" width="240" height="24" fill="#f7d9d9"/><rect x="756" y="346" width="320" height="24" fill="#f7d9d9"/>
+    <text x="26" y="362" font-weight="600">Veteran</text><text x="246" y="362">collects most</text><text x="526" y="362">optimized route</text><text x="766" y="362">survives to 40–50</text>
+  </g>
+
+  <!-- ============ DIFFICULTY WAVES ============ -->
+  <rect x="16" y="378" width="1060" height="22" fill="#3a5566"/>
+  <text x="546" y="393" class="f" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">DIFFICULTY WAVES (every 10 planets)</text>
+  <g class="f" font-size="12" font-weight="600" fill="#fff">
+    <rect x="16" y="400" width="110" height="22" fill="#4a6a7d"/><rect x="126" y="400" width="140" height="22" fill="#4a6a7d"/><rect x="266" y="400" width="170" height="22" fill="#4a6a7d"/><rect x="436" y="400" width="640" height="22" fill="#4a6a7d"/>
+    <text x="26" y="415">WAVE</text><text x="136" y="415">PLANETS</text><text x="276" y="415">DIFFICULTY</text><text x="446" y="415">KEY CHANGE</text>
+  </g>
+  <g class="f" font-size="12" fill="#2b2b2b">
+    <rect x="16" y="422" width="110" height="24" fill="#fbf3cf"/><rect x="126" y="422" width="140" height="24" fill="#fbf3cf"/><rect x="266" y="422" width="170" height="24" fill="#fbf3cf"/><rect x="436" y="422" width="640" height="24" fill="#fbf3cf"/>
+    <text x="26" y="438" font-weight="600">1</text><text x="136" y="438">1–10</text><text x="276" y="438">Trivial</text><text x="446" y="438">Static planets, no obstacles — tutorial</text>
+    <rect x="16" y="446" width="110" height="24" fill="#d9f0dd"/><rect x="126" y="446" width="140" height="24" fill="#d9f0dd"/><rect x="266" y="446" width="170" height="24" fill="#d9f0dd"/><rect x="436" y="446" width="640" height="24" fill="#d9f0dd"/>
+    <text x="26" y="462" font-weight="600">2</text><text x="136" y="462">11–20</text><text x="276" y="462">Easy</text><text x="446" y="462">30% planets move, first 3–5 asteroids</text>
+    <rect x="16" y="470" width="110" height="24" fill="#fbf3cf"/><rect x="126" y="470" width="140" height="24" fill="#fbf3cf"/><rect x="266" y="470" width="170" height="24" fill="#fbf3cf"/><rect x="436" y="470" width="640" height="24" fill="#fbf3cf"/>
+    <text x="26" y="486" font-weight="600">3</text><text x="136" y="486">21–30</text><text x="276" y="486">Medium</text><text x="446" y="486">50% move, 8–12 asteroids, first catapults</text>
+    <rect x="16" y="494" width="110" height="24" fill="#fde7c2"/><rect x="126" y="494" width="140" height="24" fill="#fde7c2"/><rect x="266" y="494" width="170" height="24" fill="#fde7c2"/><rect x="436" y="494" width="640" height="24" fill="#fde7c2"/>
+    <text x="26" y="510" font-weight="600">4</text><text x="136" y="510">31–40</text><text x="276" y="510">Hard</text><text x="446" y="510">70% chaotic, first black holes, wormholes</text>
+    <rect x="16" y="518" width="110" height="24" fill="#f7d9d9"/><rect x="126" y="518" width="140" height="24" fill="#f7d9d9"/><rect x="266" y="518" width="170" height="24" fill="#f7d9d9"/><rect x="436" y="518" width="640" height="24" fill="#f7d9d9"/>
+    <text x="26" y="534" font-weight="600">5+</text><text x="136" y="534">41+</text><text x="276" y="534">Extreme</text><text x="446" y="534">90% fast, 4–6 black holes, time loops</text>
+  </g>
+
+  <text x="16" y="568" class="f" font-size="11" font-style="italic" fill="#6b7280">OrbitJump — design excerpt · Yegor Artsev · 2026</text>
+</svg>

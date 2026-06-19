@@ -233,6 +233,18 @@ export default function FreelancePage() {
             loop, level structure and game feel. A small, focused build to test a
             clean one-more-run hook.
           </p>
+
+          <Figure
+            src="/fl-oj-coreloop.svg"
+            alt="OrbitJump core loop and meta loop diagram"
+            caption="Core loop and meta loop: every run earns coins, no run is wasted."
+          />
+          <Figure
+            src="/fl-oj-design.svg"
+            alt="OrbitJump design document: planet types, fuel economy and difficulty waves"
+            caption="Design excerpt: planet types, fuel economy and difficulty waves."
+          />
+
           <StatusLine>PROTOTYPE</StatusLine>
         </section>
 

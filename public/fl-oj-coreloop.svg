@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="640" viewBox="0 0 1800 640" font-size="14">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap');
+      .f { font-family:'Inter','Segoe UI',sans-serif; }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1800" height="640" fill="#ffffff"/>
+
+  <text x="760" y="56" class="f" font-size="40" font-weight="800" fill="#101828" text-anchor="middle">CORE LOOP DIAGRAM</text>
+
+  <!-- ===== IN-RUN LOOP ===== -->
+  <rect x="40" y="100" width="1400" height="210" rx="16" fill="#3a6fd8"/>
+  <rect x="60" y="150" width="1360" height="140" rx="12" fill="#ffffff"/>
+  <text x="78" y="135" class="f" font-size="20" font-weight="800" fill="#ffffff">IN-RUN LOOP</text>
+
+  <g class="f" text-anchor="middle">
+    <!-- circles -->
+    <g>
+      <circle cx="140" cy="205" r="30" fill="#fff" stroke="#d8dee0" stroke-width="2"/><text x="140" y="215" font-size="28">🚀</text><text x="140" y="262" font-size="14" font-weight="600" fill="#101828">Jump</text>
+      <circle cx="340" cy="205" r="30" fill="#fff" stroke="#d8dee0" stroke-width="2"/><text x="340" y="215" font-size="28">🪐</text><text x="340" y="262" font-size="14" font-weight="600" fill="#101828">Orbit</text>
+      <circle cx="540" cy="205" r="30" fill="#fff" stroke="#d8dee0" stroke-width="2"/><text x="540" y="215" font-size="28">⛽</text><text x="540" y="262" font-size="14" font-weight="600" fill="#101828">Collect Fuel</text>
+      <circle cx="740" cy="205" r="30" fill="#fff" stroke="#d8dee0" stroke-width="2"/><text x="740" y="215" font-size="28">✨</text><text x="740" y="262" font-size="14" font-weight="600" fill="#101828">Chain Combo</text>
+      <circle cx="940" cy="205" r="30" fill="#fff" stroke="#d8dee0" stroke-width="2"/><text x="940" y="215" font-size="28">☄️</text><text x="940" y="262" font-size="14" font-weight="600" fill="#101828">Dodge</text>
+      <circle cx="1140" cy="205" r="30" fill="#fff" stroke="#d8dee0" stroke-width="2"/><text x="1140" y="215" font-size="28">🌠</text><text x="1140" y="262" font-size="14" font-weight="600" fill="#101828">Fly Far</text>
+      <circle cx="1340" cy="205" r="30" fill="#fff" stroke="#d8dee0" stroke-width="2"/><text x="1340" y="215" font-size="28">💥</text><text x="1340" y="262" font-size="14" font-weight="600" fill="#101828">Crash</text>
+    </g>
+    <!-- arrows -->
+    <g font-size="26" fill="#2b3a55" font-weight="700">
+      <text x="240" y="214">➜</text><text x="440" y="214">➜</text><text x="640" y="214">➜</text><text x="840" y="214">➜</text><text x="1040" y="214">➜</text><text x="1240" y="214">➜</text>
+    </g>
+  </g>
+
+  <!-- down arrow -->
+  <g fill="#2b3a55"><rect x="1430" y="312" width="14" height="40" rx="3"/><polygon points="1417,348 1457,348 1437,372"/></g>
+
+  <!-- ===== META LOOP ===== -->
+  <rect x="40" y="380" width="1400" height="210" rx="16" fill="#f0922b"/>
+  <rect x="60" y="430" width="1360" height="140" rx="12" fill="#ffffff"/>
+  <text x="740" y="415" class="f" font-size="20" font-weight="800" fill="#ffffff" text-anchor="middle">META LOOP</text>
+
+  <g class="f" text-anchor="middle">
+    <g>
+      <circle cx="140" cy="485" r="30" fill="#fff" stroke="#d8dee0" stroke-width="2"/><text x="140" y="495" font-size="28">🏁</text><text x="140" y="542" font-size="14" font-weight="600" fill="#101828">Finish Run</text>
+      <circle cx="340" cy="485" r="30" fill="#fff" stroke="#d8dee0" stroke-width="2"/><text x="340" y="495" font-size="28">🪙</text><text x="340" y="542" font-size="14" font-weight="600" fill="#101828">Keep Coins</text>
+      <circle cx="540" cy="485" r="30" fill="#fff" stroke="#d8dee0" stroke-width="2"/><text x="540" y="495" font-size="28">⬆️</text><text x="540" y="542" font-size="14" font-weight="600" fill="#101828">Buy Upgrades</text>
+      <circle cx="740" cy="485" r="30" fill="#fff" stroke="#d8dee0" stroke-width="2"/><text x="740" y="495" font-size="28">🎨</text><text x="740" y="542" font-size="14" font-weight="600" fill="#101828">Unlock Skins</text>
+      <circle cx="940" cy="485" r="30" fill="#fff" stroke="#d8dee0" stroke-width="2"/><text x="940" y="495" font-size="28">📅</text><text x="940" y="542" font-size="14" font-weight="600" fill="#101828">Daily Missions</text>
+      <circle cx="1140" cy="485" r="30" fill="#fff" stroke="#d8dee0" stroke-width="2"/><text x="1140" y="495" font-size="28">🚀</text><text x="1140" y="542" font-size="14" font-weight="600" fill="#101828">Stronger Start</text>
+      <circle cx="1340" cy="485" r="30" fill="#fff" stroke="#d8dee0" stroke-width="2"/><text x="1340" y="495" font-size="28">🏆</text><text x="1340" y="542" font-size="14" font-weight="600" fill="#101828">Beat Record</text>
+    </g>
+    <g font-size="26" fill="#2b3a55" font-weight="700">
+      <text x="240" y="494">➜</text><text x="440" y="494">➜</text><text x="640" y="494">➜</text><text x="840" y="494">➜</text><text x="1040" y="494">➜</text><text x="1240" y="494">➜</text>
+    </g>
+  </g>
+
+  <!-- retention sticky note -->
+  <g transform="rotate(2 1630 300)">
+    <rect x="1490" y="220" width="280" height="200" fill="#ffe45e"/>
+    <text x="1630" y="252" font-size="22" text-anchor="middle">📌</text>
+    <text x="1630" y="300" class="f" font-size="17" font-weight="800" fill="#101828" text-anchor="middle">RETENTION:</text>
+    <text x="1630" y="330" class="f" font-size="15" fill="#101828" text-anchor="middle">every run earns coins,</text>
+    <text x="1630" y="352" class="f" font-size="15" fill="#101828" text-anchor="middle">no run is wasted</text>
+    <text x="1630" y="382" class="f" font-size="14" font-style="italic" fill="#5b5b3a" text-anchor="middle">(progress always saved)</text>
+  </g>
+</svg>
