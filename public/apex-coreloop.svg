@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="900" viewBox="0 0 1800 900" font-size="14">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap');
+      .f { font-family:'Inter','Segoe UI',sans-serif; }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1800" height="900" fill="#ffffff"/>
+  <text x="760" y="54" class="f" font-size="38" font-weight="800" fill="#1e1b4b" text-anchor="middle">APEX ACADEMY — CORE LOOP</text>
+  <text x="760" y="80" class="f" font-size="15" font-style="italic" fill="#6b7280" text-anchor="middle">Micro (one question) → Meso (one chapter) → Macro (one semester)</text>
+
+  <!-- ===== MICRO ===== -->
+  <rect x="40" y="104" width="1400" height="196" rx="16" fill="#3730a3"/>
+  <rect x="60" y="150" width="1360" height="132" rx="12" fill="#ffffff"/>
+  <text x="78" y="138" class="f" font-size="19" font-weight="800" fill="#ffffff">MICRO LOOP — one question · 15–60 sec</text>
+  <g class="f" text-anchor="middle">
+    <g>
+      <circle cx="180" cy="200" r="26" fill="#fff" stroke="#d8dee0" stroke-width="2"/><text x="180" y="209" font-size="24">🗣️</text><text x="180" y="252" font-size="13" font-weight="600" fill="#1e1b4b">NPC asks</text>
+      <circle cx="400" cy="200" r="26" fill="#fff" stroke="#d8dee0" stroke-width="2"/><text x="400" y="209" font-size="24">⏱️</text><text x="400" y="252" font-size="13" font-weight="600" fill="#1e1b4b">60s timer</text>
+      <circle cx="620" cy="200" r="26" fill="#fff" stroke="#d8dee0" stroke-width="2"/><text x="620" y="209" font-size="24">🎙️</text><text x="620" y="252" font-size="13" font-weight="600" fill="#1e1b4b">Answer (voice/text)</text>
+      <circle cx="840" cy="200" r="26" fill="#fff" stroke="#d8dee0" stroke-width="2"/><text x="840" y="209" font-size="24">🤖</text><text x="840" y="252" font-size="13" font-weight="600" fill="#1e1b4b">AI scores (band)</text>
+      <circle cx="1060" cy="200" r="26" fill="#fff" stroke="#d8dee0" stroke-width="2"/><text x="1060" y="209" font-size="24">❤️</text><text x="1060" y="252" font-size="13" font-weight="600" fill="#1e1b4b">HP updates</text>
+      <circle cx="1280" cy="200" r="26" fill="#fff" stroke="#d8dee0" stroke-width="2"/><text x="1280" y="209" font-size="24">💬</text><text x="1280" y="252" font-size="13" font-weight="600" fill="#1e1b4b">Feedback → next</text>
+    </g>
+    <g font-size="24" fill="#c7d2fe" font-weight="700"><text x="290" y="208">➜</text><text x="510" y="208">➜</text><text x="730" y="208">➜</text><text x="950" y="208">➜</text><text x="1170" y="208">➜</text></g>
+  </g>
+
+  <!-- ===== MESO ===== -->
+  <rect x="40" y="322" width="1400" height="196" rx="16" fill="#b45309"/>
+  <rect x="60" y="368" width="1360" height="132" rx="12" fill="#ffffff"/>
+  <text x="78" y="356" class="f" font-size="19" font-weight="800" fill="#ffffff">MESO LOOP — one chapter · ~25 min</text>
+  <g class="f" text-anchor="middle">
+    <g>
+      <circle cx="180" cy="418" r="26" fill="#fff" stroke="#d8dee0" stroke-width="2"/><text x="180" y="427" font-size="24">📋</text><text x="180" y="470" font-size="13" font-weight="600" fill="#7c2d12">Briefing</text>
+      <circle cx="400" cy="418" r="26" fill="#fff" stroke="#d8dee0" stroke-width="2"/><text x="400" y="427" font-size="24">🎬</text><text x="400" y="470" font-size="13" font-weight="600" fill="#7c2d12">Video (80% gate)</text>
+      <circle cx="620" cy="418" r="26" fill="#fff" stroke="#d8dee0" stroke-width="2"/><text x="620" y="427" font-size="24">✅</text><text x="620" y="470" font-size="13" font-weight="600" fill="#7c2d12">Checkpoint</text>
+      <circle cx="840" cy="418" r="26" fill="#fff" stroke="#d8dee0" stroke-width="2"/><text x="840" y="427" font-size="24">🧠</text><text x="840" y="470" font-size="13" font-weight="600" fill="#7c2d12">AI Viva ×10</text>
+      <circle cx="1060" cy="418" r="26" fill="#fff" stroke="#d8dee0" stroke-width="2"/><text x="1060" y="427" font-size="24">⚡</text><text x="1060" y="470" font-size="13" font-weight="600" fill="#7c2d12">Rapid Recall</text>
+      <circle cx="1280" cy="418" r="26" fill="#fff" stroke="#d8dee0" stroke-width="2"/><text x="1280" y="427" font-size="24">🏅</text><text x="1280" y="470" font-size="13" font-weight="600" fill="#7c2d12">Results + Guide</text>
+    </g>
+    <g font-size="24" fill="#fcd34d" font-weight="700"><text x="290" y="426">➜</text><text x="510" y="426">➜</text><text x="730" y="426">➜</text><text x="950" y="426">➜</text><text x="1170" y="426">➜</text></g>
+  </g>
+
+  <!-- ===== MACRO ===== -->
+  <rect x="40" y="540" width="1400" height="196" rx="16" fill="#5b21b6"/>
+  <rect x="60" y="586" width="1360" height="132" rx="12" fill="#ffffff"/>
+  <text x="78" y="574" class="f" font-size="19" font-weight="800" fill="#ffffff">MACRO LOOP — one semester · 15 weeks</text>
+  <g class="f" text-anchor="middle">
+    <g>
+      <circle cx="180" cy="636" r="26" fill="#fff" stroke="#d8dee0" stroke-width="2"/><text x="180" y="645" font-size="24">🎓</text><text x="180" y="688" font-size="13" font-weight="600" fill="#4c1d95">Orientation</text>
+      <circle cx="400" cy="636" r="26" fill="#fff" stroke="#d8dee0" stroke-width="2"/><text x="400" y="645" font-size="24">📦</text><text x="400" y="688" font-size="13" font-weight="600" fill="#4c1d95">Units I–II</text>
+      <circle cx="620" cy="636" r="26" fill="#fff" stroke="#d8dee0" stroke-width="2"/><text x="620" y="645" font-size="24">🏛️</text><text x="620" y="688" font-size="13" font-weight="600" fill="#4c1d95">Midterm Gate</text>
+      <circle cx="840" cy="636" r="26" fill="#fff" stroke="#d8dee0" stroke-width="2"/><text x="840" y="645" font-size="24">📦</text><text x="840" y="688" font-size="13" font-weight="600" fill="#4c1d95">Units III–IV</text>
+      <circle cx="1060" cy="636" r="26" fill="#fff" stroke="#d8dee0" stroke-width="2"/><text x="1060" y="645" font-size="24">🏛️</text><text x="1060" y="688" font-size="13" font-weight="600" fill="#4c1d95">Final Gate</text>
+      <circle cx="1280" cy="636" r="26" fill="#fff" stroke="#d8dee0" stroke-width="2"/><text x="1280" y="645" font-size="24">🏆</text><text x="1280" y="688" font-size="13" font-weight="600" fill="#4c1d95">Scholar Badge</text>
+    </g>
+    <g font-size="24" fill="#c4b5fd" font-weight="700"><text x="290" y="644">➜</text><text x="510" y="644">➜</text><text x="730" y="644">➜</text><text x="950" y="644">➜</text><text x="1170" y="644">➜</text></g>
+  </g>
+
+  <!-- sticky note -->
+  <g transform="rotate(2 1630 380)">
+    <rect x="1490" y="300" width="280" height="170" fill="#fde68a"/>
+    <text x="1630" y="332" font-size="20" text-anchor="middle">📌</text>
+    <text x="1630" y="372" class="f" font-size="16" font-weight="800" fill="#1e1b4b" text-anchor="middle">ONE ATTEMPT. NO REPLAYS.</text>
+    <text x="1630" y="400" class="f" font-size="14" fill="#3a3a3a" text-anchor="middle">Public leaderboard =</text>
+    <text x="1630" y="420" class="f" font-size="14" fill="#3a3a3a" text-anchor="middle">real stakes, real recall</text>
+  </g>
+
+  <text x="40" y="770" class="f" font-size="11" font-style="italic" fill="#9ca3af">APEX Academy — design excerpt · learning loop · shown with partner's permission</text>
+</svg>

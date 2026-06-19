@@ -30,13 +30,7 @@ const PROJECTS = [
     role: "Game Designer & Developer · 2026 · VR · PC",
     line: "VR medical education I design and build end to end, solo. Unity, Meta Quest.",
     img: "/card-apex.jpg",
-  },
-  {
-    name: "Temple of the Mind",
-    role: "Solo Game & Level Designer · Personal · In dev",
-    line: "Two levels, no UI. Light and props do the talking.",
-    img: "/card-temple.jpg",
-    href: "/work/temple-of-mind",
+    href: "/work/apex",
   },
   {
     name: "Khalifa University",
@@ -44,6 +38,13 @@ const PROJECTS = [
     line: "Gamified clinical training in VR. Won the contract, designed the product, led a small team. Unreal 5 · Meta Quest",
     img: "/card-khalifa.jpg",
     href: "/work/khalifa-vr",
+  },
+  {
+    name: "Temple of the Mind",
+    role: "Solo Game & Level Designer · Personal · In dev",
+    line: "Two levels, no UI. Light and props do the talking.",
+    img: "/card-temple.jpg",
+    href: "/work/temple-of-mind",
   },
   {
     name: "Real Estate VR / PC",
