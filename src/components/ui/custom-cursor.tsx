@@ -103,7 +103,9 @@ export function CustomCursor() {
       const el = ref.current;
       if (el) el.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
       const target = document.elementFromPoint(e.clientX, e.clientY) as HTMLElement | null;
-      const clickable = !!target?.closest('a, button, [role="button"], input, select, textarea');
+      const clickable =
+        !!target?.closest('a, button, [role="button"], input, select, textarea') ||
+        !!(target?.tagName === "IMG" && target.closest("article"));
       if (clickable !== hotRef.current) {
         hotRef.current = clickable;
         setHot(clickable);

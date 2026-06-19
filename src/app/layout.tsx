@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { CustomCursor } from "@/components/ui/custom-cursor";
+import { Lightbox } from "@/components/ui/lightbox";
 import { SmoothScroll } from "@/components/providers/smooth-scroll";
 import { AudioProvider } from "@/components/providers/audio-provider";
 
@@ -21,6 +22,7 @@ export default function RootLayout({
         <AudioProvider>
           <CustomCursor />
           <SmoothScroll>{children}</SmoothScroll>
+          <Lightbox />
         </AudioProvider>
       </body>
     </html>

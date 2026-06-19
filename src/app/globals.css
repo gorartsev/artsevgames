@@ -165,6 +165,11 @@
   image-rendering: crisp-edges;
 }
 
+/* zoomable case-study photos (fallback when custom cursor is off) */
+article img {
+  cursor: zoom-in;
+}
+
 /* custom mummy-hand cursor */
 html.cursor-hidden,
 html.cursor-hidden * {
