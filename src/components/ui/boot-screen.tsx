@@ -1,10 +1,12 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import LoadingScreen from "@/components/ui/8bit-loading-screen";
 import { useAudio } from "@/components/providers/audio-provider";
 import { setScrollLocked } from "@/components/providers/boot-lock";
 import { cn } from "@/lib/utils";
+
+const SKIP_BOOT_KEY = "apex-booted";
 
 export function BootScreen() {
   const { play } = useAudio();
@@ -12,15 +14,30 @@ export function BootScreen() {
   const [done, setDone] = useState(false);
   const [gone, setGone] = useState(false);
 
-  // lock scroll while the menu / loading is up, release once we enter the site
+  // skip the boot menu if it already ran this session (e.g. returning from a project page)
+  useLayoutEffect(() => {
+    if (typeof window !== "undefined" && sessionStorage.getItem(SKIP_BOOT_KEY)) {
+      setGone(true);
+    }
+  }, []);
+
+  // lock scroll while the menu / loading is up, release once we enter the site (or if skipped)
   useEffect(() => {
     const html = document.documentElement;
-    html.classList.toggle("boot-lock", !done);
-    setScrollLocked(!done);
+    const locked = !done && !gone;
+    html.classList.toggle("boot-lock", locked);
+    setScrollLocked(locked);
     return () => {
       html.classList.remove("boot-lock");
       setScrollLocked(false);
     };
+  }, [done, gone]);
+
+  // remember the boot ran, so returning to "/" this session goes straight to the site
+  useEffect(() => {
+    if (done && typeof window !== "undefined") {
+      sessionStorage.setItem(SKIP_BOOT_KEY, "1");
+    }
   }, [done]);
 
   const handlePlay = () => {
