@@ -39,6 +39,13 @@ const PROJECTS = [
     img: "/tom-card.jpg",
     href: "/work/temple-of-mind",
   },
+  {
+    name: "Freelance",
+    role: "Game Designer (Freelance) · 2025–26 · Remote",
+    line: "Two games designed from scratch, plus design consulting on live mobile titles.",
+    img: "/fl-card.jpg",
+    href: "/work/freelance",
+  },
 ]
 import {
   CenterUnderline,

@@ -6,7 +6,10 @@ import { useAudio } from "@/components/providers/audio-provider";
 import { setScrollLocked } from "@/components/providers/boot-lock";
 import { cn } from "@/lib/utils";
 
-const SKIP_BOOT_KEY = "apex-booted";
+// In-memory flag (NOT sessionStorage): resets on a real page load/refresh, but
+// survives client-side navigation. So PLAY always shows on a fresh load, and is
+// only skipped when bouncing back from a project page within the same SPA session.
+let bootedThisLoad = false;
 
 export function BootScreen() {
   const { play } = useAudio();
@@ -14,9 +17,9 @@ export function BootScreen() {
   const [done, setDone] = useState(false);
   const [gone, setGone] = useState(false);
 
-  // skip the boot menu if it already ran this session (e.g. returning from a project page)
+  // skip the boot menu only when returning from a project page in the same load
   useLayoutEffect(() => {
-    if (typeof window !== "undefined" && sessionStorage.getItem(SKIP_BOOT_KEY)) {
+    if (bootedThisLoad) {
       setGone(true);
     }
   }, []);
@@ -33,10 +36,10 @@ export function BootScreen() {
     };
   }, [done, gone]);
 
-  // remember the boot ran, so returning to "/" this session goes straight to the site
+  // remember the boot ran, so bouncing back to "/" this load goes straight to the site
   useEffect(() => {
-    if (done && typeof window !== "undefined") {
-      sessionStorage.setItem(SKIP_BOOT_KEY, "1");
+    if (done) {
+      bootedThisLoad = true;
     }
   }, [done]);
 

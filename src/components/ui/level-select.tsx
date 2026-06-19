@@ -168,6 +168,22 @@ export function LevelSelect({ projects }: { projects: Project[] }) {
         <ArrowButton label="▶" ariaLabel="Next project" onClick={() => go(1)} />
       </div>
 
+      {/* explicit open-project CTA (always visible, key on mobile where hover ENTER is hidden) */}
+      <div className="mt-7 flex justify-center">
+        <button
+          type="button"
+          onClick={enter}
+          aria-label={`Open ${c.name}`}
+          className="retro inline-flex items-center gap-3 border-4 border-[#0a0c08] bg-[linear-gradient(160deg,#52b788,#2d6a4f)] px-7 py-3 text-[11px] text-[#0a1f12] shadow-[inset_0_2px_0_rgba(255,255,255,0.25),0_5px_0_#0a0c08] transition hover:brightness-110 active:translate-y-[3px] active:shadow-[inset_0_2px_0_rgba(255,255,255,0.25)] md:text-sm"
+        >
+          <span
+            aria-hidden="true"
+            className="inline-block h-0 w-0 border-y-[7px] border-l-[12px] border-y-transparent border-l-current"
+          />
+          OPEN PROJECT
+        </button>
+      </div>
+
       {/* level pips */}
       <div className="mt-8 flex items-center justify-center gap-2.5">
         {projects.map((p, k) => (
