@@ -15,6 +15,7 @@ type Game = {
   meta: string;
   body: string;
   play: string;
+  video?: string;
   shots: Shot[];
 };
 
@@ -25,6 +26,7 @@ const GAMES: Game[] = [
     meta: "Released 2026 · Game & Level Designer",
     body: "I joined as level designer and grew into game design here. I pitched mechanics to the producers that were approved and shipped. I owned level design from greybox to final. This is the project where I stopped just building levels and started shaping how the game plays. Among the mechanics I pitched and shipped: a spellbook system that added variety to the standard breaker loop, alongside the light-gated navigation you can see below.",
     play: "https://play.google.com/store/apps/details?id=com.murder.hill",
+    video: "/p24-mh-hero.mp4",
     shots: [
       {
         src: "/p24-mh-raid.jpg",
@@ -176,21 +178,18 @@ export default function Play24Page() {
           <Chip>2025 · Kyiv</Chip>
         </div>
 
-        {/* hero phone shot */}
-        <div className="mt-8 flex flex-col items-center">
-          <div className="relative aspect-[9/16] w-full max-w-[260px] overflow-hidden border-4 border-[#0a0c08] bg-black shadow-[0_0_0_3px_rgba(64,145,108,0.4),0_18px_40px_-18px_rgba(0,0,0,0.5)]">
-            <video
-              src="/p24-mh-hero.mp4"
-              poster="/p24-mh-hero.jpg"
-              autoPlay
-              loop
-              muted
-              playsInline
+        {/* hero — 24HIT studio banner */}
+        <div className="mt-8">
+          <div className="relative aspect-video w-full overflow-hidden border-4 border-[#0a0c08] bg-white shadow-[0_0_0_3px_rgba(64,145,108,0.4),0_18px_40px_-18px_rgba(0,0,0,0.5)]">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/p24-logo.jpg"
+              alt="24HIT — 24 Play LLC"
               className="absolute inset-0 h-full w-full object-cover"
+              draggable={false}
             />
-            <div className="pointer-events-none absolute inset-0 bg-[repeating-linear-gradient(0deg,rgba(0,0,0,0.1)_0px,rgba(0,0,0,0.1)_1px,transparent_1px,transparent_3px)]" />
           </div>
-          <p className="retro mt-3 max-w-md text-center text-[9px] leading-relaxed text-muted-foreground">
+          <p className="retro mt-3 text-[9px] leading-relaxed text-muted-foreground">
             Three shipped mobile titles: level design and the mechanics I pitched
             that shipped.
           </p>
@@ -241,6 +240,23 @@ export default function Play24Page() {
             <p className="mt-5 text-sm leading-relaxed text-foreground/85 md:text-base">
               {g.body}
             </p>
+
+            {g.video && (
+              <div className="mt-7 flex justify-center">
+                <div className="relative aspect-[9/16] w-full max-w-[240px] overflow-hidden border-2 border-[#0a0c08] bg-black shadow-[0_0_0_2px_rgba(64,145,108,0.35)]">
+                  <video
+                    src={g.video}
+                    poster="/p24-mh-hero.jpg"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    preload="auto"
+                    className="absolute inset-0 h-full w-full object-cover"
+                  />
+                </div>
+              </div>
+            )}
 
             <div className="mt-7 grid grid-cols-2 gap-x-3 gap-y-5 sm:grid-cols-3">
               {g.shots.map((s) => (
