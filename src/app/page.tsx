@@ -1,65 +1,189 @@
-import Image from "next/image";
+"use client"
+
+import { BootScreen } from "@/components/ui/boot-screen"
+import { PixelTrail } from "@/components/ui/pixel-trail"
+import { GooeyFilter } from "@/components/ui/gooey-filter"
+import { GooeyText } from "@/components/ui/gooey-text-morphing"
+import { LevelSelect } from "@/components/ui/level-select"
+import { SoundToggle } from "@/components/ui/sound-toggle"
+import { HandWrittenTitle } from "@/components/ui/hand-writing-text"
+import Timeline2 from "@/components/ui/8bit-timeline2"
+import FAQ1 from "@/components/ui/8bit-faq1"
+
+const PROJECTS = [
+  {
+    name: "APEX Academy",
+    role: "Lead Game & Level Designer",
+    line: "VR medical-education platform — biochem pathways turned into playable, explorable levels.",
+    img: "https://images.unsplash.com/photo-1717893777838-4e222311630b?w=1400&auto=format&fit=crop",
+  },
+  {
+    name: "Biochem Pathways",
+    role: "Level Designer",
+    line: "Glycolysis, TCA and ETC reimagined as spatial VR levels with pacing and player guidance.",
+    img: "https://images.unsplash.com/photo-1717588604557-55b2888f59a6?w=1400&auto=format&fit=crop",
+  },
+  {
+    name: "EV01",
+    role: "Technical Designer",
+    line: "Engineering simulation demo — systems prototyping bridging design and code.",
+    img: "https://images.unsplash.com/photo-1713417338603-1b6b72fcade2?w=1400&auto=format&fit=crop",
+  },
+]
+import {
+  CenterUnderline,
+  ComesInGoesOutUnderline,
+  GoesOutComesInUnderline,
+} from "@/components/ui/underline-animation"
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <main className="flex-1">
+      <BootScreen />
+      {/* ---------------- HERO ---------------- */}
+      <section className="relative min-h-svh flex flex-col overflow-hidden text-white">
+        {/* full-bleed CRT background */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/hero-crt.png"
+          alt="Pixel-art horror chase on a retro CRT TV — Yegor Artsev portfolio hero"
+          className="absolute inset-0 -z-20 h-full w-full object-cover"
+          draggable={false}
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+        {/* scrim for legibility */}
+        <div className="absolute inset-0 -z-10 bg-black/50" />
+        <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.55),transparent_28%,transparent_68%,rgba(0,0,0,0.65))]" />
+
+        {/* interactive gooey pixel trail (desktop) */}
+        <GooeyFilter id="hero-goo" strength={6} />
+        <div
+          className="pointer-events-none absolute inset-0 z-0 hidden md:block"
+          style={{ filter: "url(#hero-goo)" }}
+          aria-hidden="true"
+        >
+          <PixelTrail pixelSize={32} fadeDuration={2000} delay={0} pixelClassName="bg-[#52b788]" />
+        </div>
+
+        {/* top nav — transparent, with sound note + animated status */}
+        <header className="relative z-20 flex items-center justify-between gap-4 px-5 py-6 md:px-10">
+          {/* left: sound toggle + name */}
+          <div className="flex items-center gap-4 md:gap-6">
+            <SoundToggle />
+            <span className="hidden retro text-[9px] tracking-[0.05em] sm:inline">
+              Yegor Artsev
+            </span>
+          </div>
+
+          {/* center: nav */}
+          <nav className="hidden gap-8 retro text-[9px] text-white/75 md:flex">
+            <a href="#work" className="hover:text-white transition-colors">Work</a>
+            <a href="#about" className="hover:text-white transition-colors">About</a>
+            <a href="#contact" className="hover:text-white transition-colors">Contact</a>
+          </nav>
+
+          {/* right: animated open-to-work */}
+          <span className="flex items-center gap-2 retro text-[9px] text-[#9be37b]">
+            <span className="hud-blink inline-block h-2 w-2 bg-[#9be37b]" style={{ boxShadow: "0 0 0 1px #0e120f" }} />
+            <span className="hidden sm:inline">Open to work</span>
+          </span>
+        </header>
+
+        {/* center identity */}
+        <div className="relative z-10 flex-1 flex flex-col items-center justify-center text-center px-5 gap-8">
+          <p className="retro text-[10px] md:text-xs tracking-[0.08em] text-[#9be37b]">
+            [ Portfolio — 2026 ]
+          </p>
+
+          <GooeyText
+            texts={[
+              "Yegor Artsev",
+              "Game Designer",
+              "VR Game Designer",
+              "Level Designer",
+              "Systems Designer",
+            ]}
+            morphTime={1.6}
+            cooldownTime={3}
+            className="h-[58px] md:h-[92px] w-full max-w-5xl"
+            textClassName="retro text-white whitespace-nowrap text-2xl md:text-5xl [text-shadow:0_3px_14px_rgba(0,0,0,0.6)]"
+          />
+
+          <p className="retro text-[10px] md:text-xs tracking-[0.08em] text-[#9be37b]">
+            Game Designer · Builds &amp; Ships · Unity / UE
+          </p>
+
+          <p className="max-w-xl text-sm md:text-base text-white/85 leading-relaxed [text-shadow:0_2px_12px_rgba(0,0,0,0.55)]">
+            I design games and immersive experiences and take them to playable,
+            across mobile, PC and VR. Best work happens on a team, but I can
+            carry a project on my own when it needs it.
+          </p>
+
+          <a
+            href="#contact"
+            className="group mt-2 flex items-center gap-3 retro text-sm tracking-[0.05em] text-[#9be37b] md:text-base"
+          >
+            <span
+              className="hud-blink inline-block h-3 w-3 bg-[#9be37b]"
+              style={{ boxShadow: "0 0 0 1px #0e120f" }}
+            />
+            <span className="group-hover:text-white transition-colors [text-shadow:0_2px_10px_rgba(0,0,0,0.5)]">
+              [ Let&apos;s talk ]
+            </span>
+          </a>
+        </div>
+
+        <div className="relative z-10 px-5 md:px-10 py-5 retro text-[9px] text-white/70 flex justify-between">
+          <span>Remote · open to relocation</span>
+          <span>[ Scroll ↓ ]</span>
+        </div>
+      </section>
+
+      {/* ---------------- WORK (CRT channel switcher) ---------------- */}
+      <section id="work" className="relative z-10 bg-background py-20 md:py-28">
+        <div className="mb-10 px-5 text-center md:mb-14 md:px-10">
+          <p className="retro text-[10px] tracking-[0.14em] text-primary">
+            [ 01 / Selected work ]
+          </p>
+          <p className="mt-4 text-xs text-muted-foreground md:text-sm">
+            Pick a level. Arrows flip through the work.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+        <LevelSelect projects={PROJECTS} />
+      </section>
+
+      {/* ---------------- ABOUT (8-bit quest line) ---------------- */}
+      <section id="about" className="relative z-10 bg-background">
+        <Timeline2 />
+      </section>
+
+      {/* ---------------- FAQ (8-bit) ---------------- */}
+      <section id="faq" className="relative z-10 bg-background">
+        <FAQ1 />
+      </section>
+
+      {/* ---------------- CONTACT / FOOTER ---------------- */}
+      <section id="contact" className="relative z-10 bg-background px-5 md:px-10 pt-16 pb-16 border-t border-border">
+        <HandWrittenTitle title="Let's talk" subtitle="Available for game & level design roles" />
+
+        <div className="flex flex-col items-center gap-5 retro text-sm md:text-xl pb-16">
+          <a href="https://www.linkedin.com/in/yegor-artsev/" target="_blank" rel="noreferrer">
+            <CenterUnderline label="LinkedIn" />
           </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
+          <a href="https://t.me/grarchimp" target="_blank" rel="noreferrer">
+            <ComesInGoesOutUnderline label="Telegram" direction="right" />
+          </a>
+          <a href="/Yegor-Artsev-CV.pdf" download="Yegor-Artsev-CV.pdf">
+            <ComesInGoesOutUnderline label="CV (PDF)" direction="left" />
+          </a>
+          <a href="mailto:artsevgames@gmail.com" className="pt-8">
+            <GoesOutComesInUnderline label="artsevgames@gmail.com" direction="left" />
           </a>
         </div>
-      </main>
-    </div>
-  );
+
+        <p className="retro text-[9px] text-muted-foreground text-center pb-8">
+          © 2026 Yegor Artsev · Game &amp; Level Designer
+        </p>
+      </section>
+    </main>
+  )
 }
