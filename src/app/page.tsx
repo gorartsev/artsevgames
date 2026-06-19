@@ -32,6 +32,13 @@ const PROJECTS = [
     img: "/p24-logo.jpg",
     href: "/work/24-play",
   },
+  {
+    name: "Temple of the Mind",
+    role: "Solo Game & Level Designer · Personal · In dev",
+    line: "Two levels, no UI. Light and props do the talking.",
+    img: "/tom-card.jpg",
+    href: "/work/temple-of-mind",
+  },
 ]
 import {
   CenterUnderline,
