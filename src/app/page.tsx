@@ -12,39 +12,45 @@ import FAQ1 from "@/components/ui/8bit-faq1"
 
 const PROJECTS = [
   {
+    name: "24 Play LLC",
+    role: "Game & Level Designer · 2025",
+    line: "Three shipped mobile titles. Raids, atmosphere and the mechanics I pitched that made it in.",
+    img: "/card-24play.jpg",
+    href: "/work/24-play",
+  },
+  {
+    name: "Freelance",
+    role: "Game Designer (Freelance) · 2025–26 · Remote",
+    line: "Two games designed from scratch, plus design consulting on live mobile titles.",
+    img: "/card-freelance.jpg",
+    href: "/work/freelance",
+  },
+  {
+    name: "APEX Academy",
+    role: "Game Designer & Developer · 2026 · VR · PC",
+    line: "VR medical education I design and build end to end, solo. Unity, Meta Quest.",
+    img: "/card-apex.jpg",
+  },
+  {
+    name: "Temple of the Mind",
+    role: "Solo Game & Level Designer · Personal · In dev",
+    line: "Two levels, no UI. Light and props do the talking.",
+    img: "/card-temple.jpg",
+    href: "/work/temple-of-mind",
+  },
+  {
     name: "Khalifa University",
     role: "Game Designer · VR",
     line: "Gamified clinical training in VR. Won the contract, designed the product, led a small team. Unreal 5 · Meta Quest",
-    img: "/khalifa-logo.jpg",
+    img: "/card-khalifa.jpg",
     href: "/work/khalifa-vr",
   },
   {
     name: "Real Estate VR / PC",
     role: "Game Designer · VR & Interactive · Contract (NDA)",
     line: "Walk through an apartment that won't exist for two years, in VR and on PC.",
-    img: "/real-estate-contract.jpg",
+    img: "/card-contract.jpg",
     href: "/work/real-estate-vr",
-  },
-  {
-    name: "24 Play LLC",
-    role: "Game & Level Designer · 2025",
-    line: "Three shipped mobile titles. Raids, atmosphere and the mechanics I pitched that made it in.",
-    img: "/p24-logo.jpg",
-    href: "/work/24-play",
-  },
-  {
-    name: "Temple of the Mind",
-    role: "Solo Game & Level Designer · Personal · In dev",
-    line: "Two levels, no UI. Light and props do the talking.",
-    img: "/tom-card.jpg",
-    href: "/work/temple-of-mind",
-  },
-  {
-    name: "Freelance",
-    role: "Game Designer (Freelance) · 2025–26 · Remote",
-    line: "Two games designed from scratch, plus design consulting on live mobile titles.",
-    img: "/fl-card.jpg",
-    href: "/work/freelance",
   },
 ]
 import {
