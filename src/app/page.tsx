@@ -16,6 +16,7 @@ const PROJECTS = [
     role: "Game Designer · VR",
     line: "Gamified clinical training in VR. Won the contract, designed the product, led a small team. Unreal 5 · Meta Quest",
     img: "/khalifa-logo.jpg",
+    href: "/work/khalifa-vr",
   },
   {
     name: "Biochem Pathways",

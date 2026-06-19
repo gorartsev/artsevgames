@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
+import { useRouter } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 
 export interface Project {
@@ -9,6 +10,7 @@ export interface Project {
   role: string;
   line: string;
   img: string;
+  href?: string;
 }
 
 export function LevelSelect({ projects }: { projects: Project[] }) {
@@ -17,6 +19,7 @@ export function LevelSelect({ projects }: { projects: Project[] }) {
   const [watching, setWatching] = useState(false);
   const [mounted, setMounted] = useState(false);
   const ctxRef = useRef<AudioContext | null>(null);
+  const router = useRouter();
 
   useEffect(() => setMounted(true), []);
 
@@ -76,7 +79,8 @@ export function LevelSelect({ projects }: { projects: Project[] }) {
   };
   const enter = () => {
     playEnter();
-    setWatching(true);
+    if (c.href) router.push(c.href);
+    else setWatching(true);
   };
 
   const c = projects[i];
