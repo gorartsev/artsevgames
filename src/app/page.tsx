@@ -19,16 +19,11 @@ const PROJECTS = [
     href: "/work/khalifa-vr",
   },
   {
-    name: "Biochem Pathways",
-    role: "Level Designer",
-    line: "Glycolysis, TCA and ETC reimagined as spatial VR levels with pacing and player guidance.",
-    img: "https://images.unsplash.com/photo-1717588604557-55b2888f59a6?w=1400&auto=format&fit=crop",
-  },
-  {
-    name: "EV01",
-    role: "Technical Designer",
-    line: "Engineering simulation demo. Systems prototyping bridging design and code.",
-    img: "https://images.unsplash.com/photo-1713417338603-1b6b72fcade2?w=1400&auto=format&fit=crop",
+    name: "Real Estate VR / PC",
+    role: "Game Designer · VR & Interactive · Contract (NDA)",
+    line: "Walk through an apartment that won't exist for two years, in VR and on PC.",
+    img: "/real-estate-contract.jpg",
+    href: "/work/real-estate-vr",
   },
 ]
 import {

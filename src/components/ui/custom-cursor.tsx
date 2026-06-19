@@ -3,40 +3,36 @@
 import { useEffect, useRef, useState } from "react";
 
 const PAL: Record<string, string> = {
-  O: "#0e0f12", // outline
-  H: "#50555e", // body highlight
-  D: "#3a3e45", // body mid
-  d: "#2a2d33", // body shadow
-  K: "#15171c", // d-pad
-  S: "#5a606a", // stick
-  s: "#3a3e45", // stick shadow
-  L: "#ff5a5a", // led
-  G: "#7fd06a", // green btn
-  g: "#4f8f43",
-  P: "#e58fc0", // pink btn
-  p: "#b35e94",
-  B: "#5aa9e6", // blue btn
-  b: "#3a7bb5",
-  R: "#e0556b", // red btn
-  r: "#a83b4d",
+  O: "#0a0b0e", // outline
+  W: "#3c414b", // body light edge
+  B: "#23262d", // body
+  D: "#0f1116", // d-pad
+  S: "#5a606a", // stick rim
+  s: "#16181d", // stick hole
+  c: "#46d6ee", // light bar
+  G: "#7fd06a", // triangle
+  R: "#e0556b", // circle
+  U: "#5aa9e6", // cross
+  P: "#cf8ad6", // square
 };
 
+// DualShock-style gamepad
 const GAMEPAD = [
-  "...OOOO........OOOO...",
-  "..OHHHHO......OHHHHO..",
-  ".OHDDDDOOLLLLOODDDDHO.",
-  ".OHDDDDDDDDDDDDDDDDHO.",
-  "OHDDKDDDDDDDDDDDGgDDHO",
-  "OHDKKKDDDDDDDDPpDBbDHO",
-  "OHDDKDDDDDDDDDDDRrDDHO",
-  "OHDDDDSSDDDDSSDDDDDDHO",
-  "OHDDDSssSDSssSDDDDDDHO",
-  ".OHDDSSDDDDSSDDDDDdHO.",
-  ".OHHddddddddddddddHHO.",
-  "..OOHdddO....OdddHOO..",
-  "OOddddOO......OOddddOO",
-  "OddddO..........OddddO",
-  ".OOOO............OOOO.",
+  "....OOOOOOOOOOOO....",
+  "..OOWWWWWWWWWWWWOO..",
+  ".OWWBBBBccccBBBBWWO.",
+  "OWWBBBBBccccBBBBBWWO",
+  "OWBBBDBBBBBBBBGBBBWO",
+  "OWBDDDBBBBBBPBBRBBWO",
+  "OWBBBDBBBBBBBBUBBBWO",
+  "OWBBBBBSSBBSSBBBBBWO",
+  "OWBBBBSssSSssSBBBBWO",
+  ".OWBBBBSSBBSSBBBBWO.",
+  ".OOWBBBBBBBBBBBBWOO.",
+  "OOWBBWOOOOOOOOWBBWOO",
+  "OWBBWO........OWBBWO",
+  "OWBWO..........OWBWO",
+  ".OOO............OOO.",
 ];
 
 const CPAL: Record<string, string> = {
@@ -134,7 +130,7 @@ export function CustomCursor() {
         </div>
       ) : (
         <div className="cm-bob" style={{ transform: "translate(-3px, -3px)" }}>
-          <Sprite rows={GAMEPAD} palette={PAL} scale={2} />
+          <Sprite rows={GAMEPAD} palette={PAL} scale={2.3} />
         </div>
       )}
     </div>
