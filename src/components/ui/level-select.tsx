@@ -106,15 +106,18 @@ export function LevelSelect({ projects }: { projects: Project[] }) {
       </div>
 
       {/* arrows + preview */}
-      <div className="flex items-center gap-3 md:gap-6">
-        <ArrowButton label="◀" ariaLabel="Previous project" onClick={() => go(-1)} />
+      <div className="relative flex items-center gap-3 md:gap-6">
+        {/* desktop arrows beside the card */}
+        <div className="hidden md:block">
+          <ArrowButton label="◀" ariaLabel="Previous project" onClick={() => go(-1)} />
+        </div>
 
-        {/* level preview card (clickable) */}
+        {/* level preview card (clickable) — full width on mobile */}
         <button
           type="button"
           onClick={enter}
           aria-label={`Open ${c.name}`}
-          className="group relative block aspect-video flex-1 cursor-pointer overflow-hidden border-4 border-[#0a0c08] bg-black text-left shadow-[0_0_0_3px_rgba(64,145,108,0.5),0_28px_55px_-15px_rgba(0,0,0,0.55)]"
+          className="group relative block aspect-video w-full cursor-pointer overflow-hidden border-4 border-[#0a0c08] bg-black text-left shadow-[0_0_0_3px_rgba(64,145,108,0.5),0_28px_55px_-15px_rgba(0,0,0,0.55)] md:w-auto md:flex-1"
         >
           {/* sliding level content */}
           <AnimatePresence custom={dir} initial={false}>
@@ -165,16 +168,37 @@ export function LevelSelect({ projects }: { projects: Project[] }) {
           </div>
         </button>
 
-        <ArrowButton label="▶" ariaLabel="Next project" onClick={() => go(1)} />
+        {/* desktop arrows beside the card */}
+        <div className="hidden md:block">
+          <ArrowButton label="▶" ariaLabel="Next project" onClick={() => go(1)} />
+        </div>
+
+        {/* mobile arrows overlaid on the card edges */}
+        <button
+          type="button"
+          onClick={() => go(-1)}
+          aria-label="Previous project"
+          className="retro absolute left-2 top-1/2 z-30 flex h-11 w-11 -translate-y-1/2 items-center justify-center border-2 border-[#9be37b]/80 bg-black/55 text-lg text-[#9be37b] backdrop-blur-sm transition active:scale-90 md:hidden"
+        >
+          ◀
+        </button>
+        <button
+          type="button"
+          onClick={() => go(1)}
+          aria-label="Next project"
+          className="retro absolute right-2 top-1/2 z-30 flex h-11 w-11 -translate-y-1/2 items-center justify-center border-2 border-[#9be37b]/80 bg-black/55 text-lg text-[#9be37b] backdrop-blur-sm transition active:scale-90 md:hidden"
+        >
+          ▶
+        </button>
       </div>
 
       {/* explicit open-project CTA (always visible, key on mobile where hover ENTER is hidden) */}
-      <div className="mt-7 flex justify-center">
+      <div className="mt-6 flex justify-center px-4 md:mt-7">
         <button
           type="button"
           onClick={enter}
           aria-label={`Open ${c.name}`}
-          className="retro inline-flex items-center gap-3 border-4 border-[#0a0c08] bg-[linear-gradient(160deg,#52b788,#2d6a4f)] px-7 py-3 text-[11px] text-[#0a1f12] shadow-[inset_0_2px_0_rgba(255,255,255,0.25),0_5px_0_#0a0c08] transition hover:brightness-110 active:translate-y-[3px] active:shadow-[inset_0_2px_0_rgba(255,255,255,0.25)] md:text-sm"
+          className="retro inline-flex w-full max-w-[300px] items-center justify-center gap-3 border-4 border-[#0a0c08] bg-[linear-gradient(160deg,#52b788,#2d6a4f)] px-7 py-3.5 text-[11px] text-[#0a1f12] shadow-[inset_0_2px_0_rgba(255,255,255,0.25),0_5px_0_#0a0c08] transition hover:brightness-110 active:translate-y-[3px] active:shadow-[inset_0_2px_0_rgba(255,255,255,0.25)] sm:w-auto md:text-sm"
         >
           <span
             aria-hidden="true"
