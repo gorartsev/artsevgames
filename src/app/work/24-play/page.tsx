@@ -179,12 +179,14 @@ export default function Play24Page() {
         {/* hero phone shot */}
         <div className="mt-8 flex flex-col items-center">
           <div className="relative aspect-[9/16] w-full max-w-[260px] overflow-hidden border-4 border-[#0a0c08] bg-black shadow-[0_0_0_3px_rgba(64,145,108,0.4),0_18px_40px_-18px_rgba(0,0,0,0.5)]">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/p24-mh-hero.jpg"
-              alt="MurderHill gameplay"
+            <video
+              src="/p24-mh-hero.mp4"
+              poster="/p24-mh-hero.jpg"
+              autoPlay
+              loop
+              muted
+              playsInline
               className="absolute inset-0 h-full w-full object-cover"
-              draggable={false}
             />
             <div className="pointer-events-none absolute inset-0 bg-[repeating-linear-gradient(0deg,rgba(0,0,0,0.1)_0px,rgba(0,0,0,0.1)_1px,transparent_1px,transparent_3px)]" />
           </div>
