@@ -29,8 +29,8 @@ export function SiteHeader() {
         </span>
       </div>
 
-      {/* center: nav */}
-      <nav className="hidden gap-8 retro text-[9px] text-white/75 md:flex">
+      {/* center: nav — absolutely centered so it's dead-middle regardless of side widths */}
+      <nav className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 gap-8 retro text-[9px] text-white/75 md:flex">
         <a href="#work" className="transition-colors hover:text-white">
           Work
         </a>
