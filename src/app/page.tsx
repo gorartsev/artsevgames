@@ -25,6 +25,13 @@ const PROJECTS = [
     img: "/real-estate-contract.jpg",
     href: "/work/real-estate-vr",
   },
+  {
+    name: "24 Play LLC",
+    role: "Game & Level Designer · 2025",
+    line: "Three shipped mobile titles. Raids, atmosphere and the mechanics I pitched that made it in.",
+    img: "/p24-logo.jpg",
+    href: "/work/24-play",
+  },
 ]
 import {
   CenterUnderline,
