@@ -12,10 +12,10 @@ import FAQ1 from "@/components/ui/8bit-faq1"
 
 const PROJECTS = [
   {
-    name: "APEX Academy",
-    role: "Lead Game & Level Designer",
-    line: "VR medical-education platform — biochem pathways turned into playable, explorable levels.",
-    img: "https://images.unsplash.com/photo-1717893777838-4e222311630b?w=1400&auto=format&fit=crop",
+    name: "Khalifa University",
+    role: "Game Designer · VR",
+    line: "Gamified clinical training in VR. Won the contract, designed the product, led a small team. Unreal 5 · Meta Quest",
+    img: "/khalifa-logo.jpg",
   },
   {
     name: "Biochem Pathways",
@@ -26,7 +26,7 @@ const PROJECTS = [
   {
     name: "EV01",
     role: "Technical Designer",
-    line: "Engineering simulation demo — systems prototyping bridging design and code.",
+    line: "Engineering simulation demo. Systems prototyping bridging design and code.",
     img: "https://images.unsplash.com/photo-1713417338603-1b6b72fcade2?w=1400&auto=format&fit=crop",
   },
 ]
@@ -47,7 +47,7 @@ export default function Home() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/hero-crt.png"
-          alt="Pixel-art horror chase on a retro CRT TV — Yegor Artsev portfolio hero"
+          alt="Pixel-art horror chase on a retro CRT TV, Yegor Artsev portfolio hero"
           className="absolute inset-0 -z-20 h-full w-full object-cover"
           draggable={false}
         />
@@ -68,7 +68,7 @@ export default function Home() {
         {/* center identity */}
         <div className="relative z-10 flex-1 flex flex-col items-center justify-center text-center px-5 gap-8">
           <p className="retro text-[10px] md:text-xs tracking-[0.08em] text-[#9be37b]">
-            [ Portfolio — 2026 ]
+            [ Portfolio · 2026 ]
           </p>
 
           <GooeyText

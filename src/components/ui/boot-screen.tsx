@@ -63,7 +63,7 @@ export function BootScreen() {
         {phase === "menu" ? (
           <div className="flex flex-col items-center gap-8 text-center md:gap-10">
             <p className="retro text-[10px] tracking-[0.2em] text-[#9be37b]">
-              [ Portfolio — 2026 ]
+              [ Portfolio · 2026 ]
             </p>
             <h1 className="retro text-2xl md:text-5xl [text-shadow:0_3px_14px_rgba(0,0,0,0.6)]">
               YEGOR ARTSEV

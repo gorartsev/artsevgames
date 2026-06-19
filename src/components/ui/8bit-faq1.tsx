@@ -23,7 +23,7 @@ const defaultItems: FAQItem[] = [
   {
     question: "What do you actually do?",
     answer:
-      "Game & level design — core loops, systems, spatial flow and pacing, all documented in clear GDDs. I'm the bridge between devs and artists.",
+      "Game & level design: core loops, systems, spatial flow and pacing, all documented in clear GDDs. I'm the bridge between devs and artists.",
   },
   {
     question: "What tools do you use?",

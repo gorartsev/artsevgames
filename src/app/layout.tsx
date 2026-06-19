@@ -5,9 +5,9 @@ import { SmoothScroll } from "@/components/providers/smooth-scroll";
 import { AudioProvider } from "@/components/providers/audio-provider";
 
 export const metadata: Metadata = {
-  title: "Yegor Artsev — Game & Level Designer",
+  title: "Yegor Artsev · Game & Level Designer",
   description:
-    "Yegor Artsev is a game & level designer who turns ideas into playable systems — spatial flow, pacing, and the moments players remember.",
+    "Yegor Artsev is a game & level designer who turns ideas into playable systems, spatial flow, pacing and the moments players remember.",
 };
 
 export default function RootLayout({

@@ -19,7 +19,7 @@ const defaultSteps: TimelineStep[] = [
   {
     icon: "I",
     title: "Design",
-    description: "Core loop, systems, spatial flow — written up in a clear GDD.",
+    description: "Core loop, systems, spatial flow, written up in a clear GDD.",
   },
   {
     icon: "II",
@@ -34,7 +34,7 @@ const defaultSteps: TimelineStep[] = [
   {
     icon: "IV",
     title: "Ship",
-    description: "Polish, pacing, and the moments players actually remember.",
+    description: "Polish, pacing and the moments players actually remember.",
   },
 ];
 

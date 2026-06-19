@@ -203,7 +203,7 @@ export function LevelSelect({ projects }: { projects: Project[] }) {
                 <div className="absolute inset-0 bg-[#0b3a23]/25 mix-blend-multiply" />
                 <div className="absolute inset-0 bg-[repeating-linear-gradient(0deg,rgba(0,0,0,0.16)_0px,rgba(0,0,0,0.16)_1px,transparent_1px,transparent_3px)]" />
                 <div className="retro absolute left-4 top-4 text-[10px] text-[#9be37b] [text-shadow:0_1px_4px_#000]">
-                  NOW PLAYING — LEVEL {ch} / {total}
+                  NOW PLAYING · LEVEL {ch} / {total}
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent p-6 md:p-8">
                   <p className="retro mb-2 text-[9px] text-[#9be37b]">{c.role}</p>
